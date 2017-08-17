@@ -80,9 +80,6 @@
     <Reference Include="KSPAssets">
       <HintPath>$(KSP_DLL_PATH)\KSPAssets.dll</HintPath>
     </Reference>
-    <Reference Include="KSPUtil">
-      <HintPath>$(KSP_DLL_PATH)\KSPUtil.dll</HintPath>
-    </Reference>
     <Reference Include="mscorlib">
       <HintPath>$(KSP_DLL_PATH)/mscorlib.dll</HintPath>
     </Reference>
@@ -100,9 +97,6 @@
     </Reference>
     <Reference Include="System.Xml">
       <HintPath>$(KSP_DLL_PATH)\System.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <HintPath>$(KSP_DLL_PATH)\System.Xml.Linq.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ProjectExtensions>
