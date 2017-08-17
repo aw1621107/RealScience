@@ -177,23 +177,20 @@ namespace KSPPluginFramework
             {
                 if (_Visible != value)
                 {
-                    if (value)
-                    {
-                        LogFormatted_DebugOnly("Adding Window to PostDrawQueue-{0}", WindowID);
-                        RenderingManager.AddToPostDrawQueue(5, this.DrawGUI);
-                    }
-                    else
-                    {
-                        LogFormatted_DebugOnly("Removing Window from PostDrawQueue", WindowID);
-                        RenderingManager.RemoveFromPostDrawQueue(5, this.DrawGUI);
-                    }
-
                     //raise event if theres one registered
                     if (onWindowVisibleChanged != null)
                         onWindowVisibleChanged(this, value);
                 }
                 _Visible = value;
                 
+            }
+        }
+
+        internal override void OnGUIEvery()
+        {
+            if (Visible)
+            {
+                this.DrawGUI();
             }
         }
 

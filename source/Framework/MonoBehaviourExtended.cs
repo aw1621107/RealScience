@@ -354,7 +354,7 @@ namespace KSPPluginFramework
         /// Unity: OnGUI is called for rendering and handling GUI events.
         ///
         /// Trigger: This is called multiple times per frame to lay stuff out etc. 
-        ///          Code here ignores the F2 key that disables user interface. So if you are making something to be user hidable then use the RenderingManager.PostDrawQueue functions in here
+        ///          Code here ignores the F2 key that disables user interface. So if you are making something to be user hidable then use a boolean property.
         ///          Alternatively you could use the MonoBehaviourWindow Type and its DrawWindow Function
         /// </summary>
         internal virtual void OnGUIEvery()
